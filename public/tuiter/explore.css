@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+}
+
+.wd-greycolorborder{
+    border-color:  grey;
+}
+
+.wd-solid {
+    border-style: solid;
+}
+
+.wd-borderthin {
+    border-width: 1px 1px 1px 1px ;
+}
+
+.wd-divisionA-greyedge{
+    background-color: darkgrey;
+}
+
+.wd-margin-to-left{
+    margin-left: 16px;
+}
+
+.wd-divisionA-roundborder{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+::placeholder {
+    padding-left: 15px;
+    color: grey;
+}
+
+.wd-searchBar{
+    background-color: transparent;
+    border: none;
+    width:80%;
+}
+
+.fa-search {
+    color: rgb(90,97,103);
+}
+
+
+.wd-exp-settings{
+    padding-left: 12px;
+    color: blue;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float:left;
+}
+
+.wd-divisionC-title {
+    color: white;
+
+}
+
+.wd-divisionB a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size:15px;
+}
+
+
+
+.wd-active {
+    color: rgb(29,161,242);
+    border-bottom: 4px solid rgb(29,161,242);
+}
+
+.wd-divisionC-topic {
+    color: lightgray;
+    font-size: small;
+}
+
+.wd-more-options {
+    padding-left: 12px;
+    width: 10px;
+    height: 10px;
+}
+
+img{
+    height: 1em;
+    width: 1em;
+    position: relative;
+}
+
+.wd-divisionC-tweets {
+    color: rgb(110, 118, 125);
+    font-size: small;
+
+}
+
+.wd-margin-to-left > img{
+    height: 100px ;
+    width: 100px;
+    float: right;
+    border-radius: 15px;
+}
+
+.fa-ellipsis-h {
+    color: gray;
+    float: right;
+    padding-right: 16px;
+}
+
+.wd-divisionD-topic {
+    color: white;
+    font-size: small;
+}
+
+
+
+.wd-divisionD-title {
+    color: white;
+}
