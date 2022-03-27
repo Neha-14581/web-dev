@@ -1,5 +1,5 @@
-import NavigationSidebar from "../NavigationSidebar/index.js"; //left
-import PostSummaryList from "../PostSummaryList/index.js"; //right
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 import PostItemList from "../PostList/index.js";
 //import ExploreComponent from "../PostSummaryList/index.js";
 

@@ -21,7 +21,6 @@ span.input-group-text{
     flex-direction: row;
     align-content: center;
     background-color: transparent;
-    /*color: grey;*/
     border: none;
 }
 .fa-search {
@@ -34,9 +33,6 @@ span.input-group-text{
     position: absolute;
     left: 500px;
 }
-/*.input-group {
-    background-color: white;
-}*/
 
 .wd-textbox {
     background-color: white;
