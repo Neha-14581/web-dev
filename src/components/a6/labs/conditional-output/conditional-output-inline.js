@@ -9,4 +9,3 @@ const ConditionalOutputInline = () => {
     );
 };
 export default ConditionalOutputInline;
-

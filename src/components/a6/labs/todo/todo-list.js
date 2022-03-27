@@ -1,5 +1,5 @@
-import TodoItem from "./TodoItem";
-import todos from "./todos.json";
+import TodoItem from "./todo-item";
+import todos from "./todo.json";
 const TodoList = () => {
     return(
         <ul>
@@ -12,4 +12,6 @@ const TodoList = () => {
     );
 }
 export default TodoList;
+
+
 
