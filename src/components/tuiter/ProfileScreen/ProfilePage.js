@@ -1,12 +1,11 @@
 import React from "react";
 import './index.css';
 import {useSelector} from "react-redux";
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const profileData = (state) => state.profile;
 
 const ProfilePage = () => {
-    let history = useNavigate();
     const profile = useSelector(profileData)[0];
 
     return(
