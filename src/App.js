@@ -4,15 +4,11 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
-import Labs from "./components/a6/labs/index";
 import LabsA7 from "./components/a7/labs/index"
-//import Tuiter from "./components/tuiter/index";
 import HomeScreen from "./components/tuiter/HomeScreen/index"
 import {BrowserRouter, Route, Routes}
     from "react-router-dom";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
-import Tuiter from "./components/tuiter/index";
-import A7 from "./components/index"
 import Build from "./components/tuiter/index";
 import ProfilePage from "./components/tuiter/ProfileScreen/ProfilePage";
 
