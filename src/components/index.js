@@ -1,29 +1,27 @@
 import React from "react";
-import {BrowserRouter, Route} from "react-router-dom";
-import Build from "/tuiter/index";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Build from "./tuiter/index";
 import HelloWorld from "./hello-world";
 import Labs from "./a6/labs/index";
 import ExploreScreen from "./tuiter/ExploreScreen/ExploreScreen";
 import HomeScreen from "./tuiter/HomeScreen/HomeScreen";
+import LabsA7 from "./a7/labs";
 
-const A6 = () => {
+const A7 = () => {
     return(
         <BrowserRouter>
             <div className="container">
-                <Route path="/hello"exact={true}>
-                    <HelloWorld/>
+                <Routes>
+                <Route path={["/", "/a7", "/a7/labs"]} exact={true}>
+                    <LabsA7/>
                 </Route>
-                <Route path="/a6/build" exact={true}>
+                <Route path="/tuiter">
                     <Build/>
                 </Route>
-                <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
-                    <Labs/>
-                </Route>
-                <Route path="/tuiter/explore" component={ExploreScreen}/>
-                <Route path="/tuiter/home" component={HomeScreen}/>
+                </Routes>
             </div>
         </BrowserRouter>
     )
 }
 
-export default A6;
+export default A7;
