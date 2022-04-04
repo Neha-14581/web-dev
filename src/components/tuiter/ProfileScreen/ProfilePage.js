@@ -6,7 +6,6 @@ import {Link, useNavigate} from "react-router-dom";
 const profileData = (state) => state.profile;
 
 const ProfilePage = () => {
-    // eslint-disable-next-line no-unused-vars
     let history = useNavigate();
     const profile = useSelector(profileData)[0];
 
@@ -35,7 +34,6 @@ const ProfilePage = () => {
 
 
             <div className="pt-3 pe-4">
-                {/*<button className="row btn rounded-pill border pull-right fw-bold wd-font-color-white" onClick={()=>history.push("/a7/twitter/editprofile")}>Edit Profile</button>*/}
                 <Link to="/a7/twitter/profile/editProfile">
                     <a className="btn border btn-block rounded-pill">Edit Profile</a>
                 </Link>
