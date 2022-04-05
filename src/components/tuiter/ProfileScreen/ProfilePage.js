@@ -1,11 +1,12 @@
 import React from "react";
 import './index.css';
 import {useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 const profileData = (state) => state.profile;
 
 const ProfilePage = () => {
+    let history =useHistory();
     const profile = useSelector(profileData)[0];
 
     return(
