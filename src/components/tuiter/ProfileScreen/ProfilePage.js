@@ -33,7 +33,7 @@ const ProfilePage = () => {
 
 
             <div className="pt-3 pe-4">
-                <Link to="/a7/twitter/profile/editProfile">
+                <Link to="/tuiter/EditProfile/editProfile">
                     <a className="btn border btn-block rounded-pill">Edit Profile</a>
                 </Link>
             </div>
