@@ -12,7 +12,7 @@ const ProfilePage = () => {
         <div>
             <div className="row">
                 <div className="col-1 ps-4">
-                    <a href="#>"><i className="fa fa-arrow-left me-3 wd-arrow-color pt-4"></i></a>
+                    <a href="/>"><i className="fa fa-arrow-left me-3 wd-arrow-color pt-4"></i></a>
                 </div>
                 <div className="col-11">
                     <div className="wd-font-color-white fw-bold wd-title-font-size" >{profile["firstName"]} {profile["lastName"]}</div>
