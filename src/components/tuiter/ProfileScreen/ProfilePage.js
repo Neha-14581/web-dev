@@ -34,10 +34,10 @@ const ProfilePage = () => {
 
 
             <div className="pt-3 pe-4">
-                <button className="row btn rounded-pill border pull-right fw-bold wd-font-color-white" onClick={()=>history.push("/a7/twitter/editprofile")}>Edit Profile</button>
-                {/*<Link to="/tuiter/EditProfile/editProfile">
-                    <a className="btn border btn-block rounded-pill">Edit Profile</a>
-                </Link>*/}
+                {/*<button className="row btn rounded-pill border pull-right fw-bold wd-font-color-white" onClick={()=>history.push("/a7/twitter/editprofile")}>Edit Profile</button>*/}
+                <Link to="/tuiter/EditProfile/editProfile">
+                    <i className="btn border btn-block rounded-pill">Edit Profile</i>
+                </Link>
             </div>
 
             <div className="pt-5"></div>
