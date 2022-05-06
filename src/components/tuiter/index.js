@@ -14,7 +14,7 @@ const store = createStore(reducer);
 const Build = () => {
     return(
         <Provider store={store}>
-                <Outlet/>
+            <Outlet/>
         </Provider>
     );
 };

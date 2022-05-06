@@ -1,14 +1,14 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import './tweet.css';
 import TweetStats from "./TweetStats";
 import {useDispatch} from "react-redux";
+import {deleteTuit} from "../../../actions/tuits-actions";
 
 const TweetListItem = ({tweet}) => {
     const dispatch = useDispatch();
-    const deleteTweetClickHandler = () => {
-        dispatch({type: 'delete-tweet', tweet})
-    }
+    // const deleteTweetClickHandler = () => {
+    //     dispatch({type: 'delete-tweet', tweet})
+    // }
     return(
         <li className="list-group-item">
             <table>
@@ -18,10 +18,13 @@ const TweetListItem = ({tweet}) => {
                              src={tweet['logo-image']}/>
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>
-                        <i onClick={deleteTweetClickHandler} className="fas fa-times fa-pull-right"></i>
+                        {/*<i onClick={deleteTweetClickHandler} className="fas fa-times fa-pull-right"></i>*/}
+                        <i onClick={() => deleteTuit(
+                            dispatch, tweet)} className="fas fa-times fa-pull-right"></i>
                         <span className="fw-bold">{tweet.userName}</span>
                         {tweet.verified && <i class="px-1 fas fa-check-circle"></i>}
                         <span className="ms-1 text-secondary">@{tweet.handle}</span>
+
                         <div>
                             {tweet.tweet}
                         </div>

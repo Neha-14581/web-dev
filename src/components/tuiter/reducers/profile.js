@@ -1,3 +1,4 @@
+
 import profileJson from '../data/profile.json';
 
 const profile = (state = profileJson, action) => {

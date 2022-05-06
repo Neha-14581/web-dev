@@ -1,11 +1,36 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch,useSelector} from "react-redux";
+//import * as service from '../../../services/tuits-service';
+import {findAllTuits}
+    from "../../../actions/tuits-actions";
 import TweetListItem from "./TweetListItem";
-
-const selectAllTweets = (state) => state.tweets;
+//import {create}
+//const selectAllTweets = (state) => state.tweets;
 
 const TweetList = () => {
-    const tweets = useSelector(selectAllTweets);
+    const tweets = useSelector(state => state.tweets);
+    const dispatch = useDispatch();
+
+    // const [newTweet, setNewTweet] =
+    //     useState({tweet: 'New tweet'});
+    /*
+    const findAllTuits = async () => {
+        const tweets = await service.findAllTuits();
+        dispatch({
+            type: 'FIND_ALL_TUITS',
+            tweets: tweets
+        });
+    }
+    useEffect(findAllTuits, []);
+
+     */
+
+    useEffect(() =>
+            findAllTuits(dispatch),
+        []);
+
+    // const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
+
     return(
         <>
             <ul className="list-group">
@@ -20,4 +45,3 @@ const TweetList = () => {
 };
 
 export default TweetList;
-

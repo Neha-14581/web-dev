@@ -1,3 +1,4 @@
+
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Build from "./tuiter/index";
@@ -8,12 +9,12 @@ const A7 = () => {
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                <Route path={["/", "/a7", "/a7/labs"]} exact={true}>
-                    <LabsA7/>
-                </Route>
-                <Route path="/tuiter">
-                    <Build/>
-                </Route>
+                    <Route path={["/", "/a7", "/a7/labs"]} exact={true}>
+                        <LabsA7/>
+                    </Route>
+                    <Route path="/tuiter">
+                        <Build/>
+                    </Route>
                 </Routes>
             </div>
         </BrowserRouter>
